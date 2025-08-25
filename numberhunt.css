@@ -8,7 +8,16 @@
     width: 100%;
     height: 100vh ;
     padding: 6rem 4rem 0;
-    background-color: lightblue;
+    background-color:chartreuse;
+}
+
+.game h1{
+    font-family: var(--font-heading);
+    font-size: var(--font-32px);
+    color: var(--font-color-black);
+    text-align: center;
+    white-space: nowrap;
+    margin: 1rem;
 }
 
 .game-console{
@@ -16,58 +25,91 @@
     height: 100%;
     overflow: hidden;
     z-index: 100;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
-.game-console h1{
-    font-family: var(--font-heading);
-    font-size: var(--font-32px);
-    color: var(--font-color-black);
-    text-align: center;
-    white-space: nowrap;
-    margin: 1.5rem;
-}
-
-.game-console-align{
+.game-console-box{
     width: 100%;
-    height: 35%;
+    height: 40%;
     column-gap: 2rem;
+    background-color: chartreuse;
 }
-.game-console-align-box{
+
+.game-console-box-info{
     width: calc(100% / 3);
     height: 100%;
+    display:flex;
     flex-direction: column;
-    
-    background-color: lightpink;
+    align-items: center;
+    justify-content: start;
 }
 
 h2{
     flex: 0 0 auto;
     font-family: var(--font-paragraph);
     font-size: var(--font-16px);
-    font-weight: var(--font-regular);
+    font-weight: var(--font-mid);
     font-style: var(--font-normal);
     text-align: center;
     white-space: nowrap;
-    margin: 1.5rem;
+    margin: 1rem;
 }
 
-.game-console-align-box p{
-    width: 100%;
+.game-console-box-info p{
+    font-family: var(--font-paragraph);
+    font-size: var(--font-14px);
+    font-weight: var(--font-mid);
     flex: 1;
-    justify-self: center;
-    height: calc(100% - 20px);
+    width: 100%;
     text-align: center;
-    background-color: blueviolet;
+    align-content: center;
+    border-radius: 1rem;
+    background-color:var(--bg-box-trspt);
 }
 
-.game-console-align-box-hide{
+.game-console-box-info:nth-of-type(1) p{
+    font-size: var(--font-100px);
+    font-weight: var(--font-bold);
+    
+}
+
+.game-console-box-info-timer:nth-of-type(1) p
+{
+    font-size: var(--font-40px);
+    font-weight: var(--font-bold);
+    
+}
+.game-console-box-info-timer{
     visibility: visible;
 }
 
-.game-score{
-    width: 25%;
-    height: 100%;
-    background-color: rgb(44, 167, 22);
-    
+.game-console-box-mode img{
+    display: block;
+    float: left;
+    width: 10rem;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem 2rem;
+    transition: var(--trns-effect);
+    /* background-color: yellow; */
+}
+
+.game-console-box-info-btn:nth-child(3) button:hover{
+    background-color: var(--bg-hover-blue);
+}
+
+.game-console-box-info-btn:nth-child(3) button{
+    width: 13rem;
+    height: 5rem;
+    font-family: var(--font-paragraph);
+    font-size: var(--font-24px);
+    font-weight: var(--font-semibold);
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    margin: 0.5rem;
+    background-color: var(--bg-box-trspt);
 }
