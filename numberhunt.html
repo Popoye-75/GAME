@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,31 +15,30 @@
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
-<body>
-  <div class="main-header">
-    <div class="main-header-logo">
-      <a href="/index.html"></a>
+  <body>
+    <div class="main-header">
+      <div class="main-header-logo">
+        <a href="/index.html"></a>
+      </div>
+      <nav class="main-header-navbar">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li class="main-header-navbar-dropdown">
+            <a href="#">Games</a>
+            <div class="main-header-navbar-dropdown-content">
+              <a href="/numberhunt.html">Number Hunt</a>
+              <a href="/millionaire.html">Millionaire</a>
+              <a href="#">Tic Tac Toe</a>
+              <a href="#">Spin Wheel</a>
+            </div>
+          </li>
+          <li><a href="#">Services</a></li>
+          <li class="main-header-navbar-dropdown"><a href="#">Contact</a></li>
+          <li><a href="/about.html">About us</a></li>
+        </ul>
+      </nav>
+      <button onclick="showLogin()" class="main-header-login">Login</button>
     </div>
-    <nav class="main-header-navbar">
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li class="main-header-navbar-dropdown">
-          <a href="#">Games</a>
-          <div class="main-header-navbar-dropdown-content">
-            <a href="/numberhunt.html">Number Hunt</a>
-            <a href="#">Tic Tac Toe</a>
-            <a href="#">Spin Wheel</a>
-            <a href="#">Millionaire</a>
-          </div>
-        </li>
-        <li><a href="#">Services</a></li>
-        <li class="main-header-navbar-dropdown"><a href="#">Contact</a></li>
-        <li><a href="/about.html">About us</a></li>
-      </ul>
-    </nav>
-    <button onclick="showLogin()" class="main-header-login">Login</button>
-  </div>
 
   <!-- -------------LogIn page------------------ -->
 
